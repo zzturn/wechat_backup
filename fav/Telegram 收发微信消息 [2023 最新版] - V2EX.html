@@ -1,0 +1,2352 @@
+<html lang="zh-CN">
+ <head>
+  <style type="text/css">
+   .tippy-touch{cursor:pointer!important}.tippy-notransition{transition:none!important}.tippy-popper{max-width:350px;-webkit-perspective:700px;perspective:700px;z-index:9999;outline:0;transition-timing-function:cubic-bezier(.165,.84,.44,1);pointer-events:none}.tippy-popper[data-html]{max-width:96%;max-width:calc(100% - 20px)}.tippy-popper[x-placement^=top] .tippy-backdrop{border-radius:40% 40% 0 0}.tippy-popper[x-placement^=top] .tippy-roundarrow{width:23px;height:23px;fill:#333;bottom:-15px;margin:0 6px}.tippy-popper[x-placement^=top] .tippy-roundarrow svg{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.tippy-popper[x-placement^=top] .tippy-arrow{border-top:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;bottom:-7px;margin:0 7px}.tippy-popper[x-placement^=top] .tippy-backdrop{-webkit-transform-origin:0 100%;transform-origin:0 100%}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(5.5) translate(-50%,25%);transform:scale(5.5) translate(-50%,25%);opacity:1}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1) translate(-50%,25%);transform:scale(1) translate(-50%,25%);opacity:0}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}.tippy-popper[x-placement^=top] [data-animation=perspective]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px) rotateX(0);transform:translateY(-10px) rotateX(0)}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) rotateX(90deg);transform:translateY(0) rotateX(90deg)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px) scale(1);transform:translateY(-10px) scale(1)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=bottom] .tippy-backdrop{border-radius:0 0 30% 30%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow{width:23px;height:23px;fill:#333;top:-15px;margin:0 6px}.tippy-popper[x-placement^=bottom] .tippy-roundarrow svg{-webkit-transform:rotate(0);transform:rotate(0)}.tippy-popper[x-placement^=bottom] .tippy-arrow{border-bottom:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;top:-7px;margin:0 7px}.tippy-popper[x-placement^=bottom] .tippy-backdrop{-webkit-transform-origin:0 -100%;transform-origin:0 -100%}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(5.5) translate(-50%,-125%);transform:scale(5.5) translate(-50%,-125%);opacity:1}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1) translate(-50%,-125%);transform:scale(1) translate(-50%,-125%);opacity:0}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}.tippy-popper[x-placement^=bottom] [data-animation=perspective]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateY(10px) rotateX(0);transform:translateY(10px) rotateX(0)}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) rotateX(-90deg);transform:translateY(0) rotateX(-90deg)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateY(10px) scale(1);transform:translateY(10px) scale(1)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=left] .tippy-backdrop{border-radius:30% 0 0 30%}.tippy-popper[x-placement^=left] .tippy-roundarrow{width:23px;height:23px;fill:#333;right:-15px;margin:4px 0}.tippy-popper[x-placement^=left] .tippy-roundarrow svg{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.tippy-popper[x-placement^=left] .tippy-arrow{border-left:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;right:-7px;margin:4px 0}.tippy-popper[x-placement^=left] .tippy-backdrop{-webkit-transform-origin:100% 0;transform-origin:100% 0}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(5.5) translate(33%,-50%);transform:scale(5.5) translate(33%,-50%);opacity:1}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1.5) translate(33%,-50%);transform:scale(1.5) translate(33%,-50%);opacity:0}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px)}.tippy-popper[x-placement^=left] [data-animation=perspective]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px) rotateY(0);transform:translateX(-10px) rotateY(0)}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) rotateY(-90deg);transform:translateX(0) rotateY(-90deg)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px) scale(1);transform:translateX(-10px) scale(1)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-popper[x-placement^=right] .tippy-backdrop{border-radius:0 30% 30% 0}.tippy-popper[x-placement^=right] .tippy-roundarrow{width:23px;height:23px;fill:#333;left:-15px;margin:4px 0}.tippy-popper[x-placement^=right] .tippy-roundarrow svg{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.tippy-popper[x-placement^=right] .tippy-arrow{border-right:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;left:-7px;margin:4px 0}.tippy-popper[x-placement^=right] .tippy-backdrop{-webkit-transform-origin:-100% 0;transform-origin:-100% 0}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(5.5) translate(-133%,-50%);transform:scale(5.5) translate(-133%,-50%);opacity:1}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1.5) translate(-133%,-50%);transform:scale(1.5) translate(-133%,-50%);opacity:0}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(20px);transform:translateX(20px)}.tippy-popper[x-placement^=right] [data-animation=perspective]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateX(10px) rotateY(0);transform:translateX(10px) rotateY(0)}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) rotateY(90deg);transform:translateX(0) rotateY(90deg)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateX(10px) scale(1);transform:translateX(10px) scale(1)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-tooltip{position:relative;color:#fff;border-radius:4px;font-size:.9rem;padding:.3rem .6rem;text-align:center;will-change:transform;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-color:#333}.tippy-tooltip[data-size=small]{padding:.2rem .4rem;font-size:.75rem}.tippy-tooltip[data-size=large]{padding:.4rem .8rem;font-size:1rem}.tippy-tooltip[data-animatefill]{overflow:hidden;background-color:transparent}.tippy-tooltip[data-animatefill] .tippy-content{transition:-webkit-clip-path cubic-bezier(.46,.1,.52,.98);transition:clip-path cubic-bezier(.46,.1,.52,.98);transition:clip-path cubic-bezier(.46,.1,.52,.98),-webkit-clip-path cubic-bezier(.46,.1,.52,.98)}.tippy-tooltip[data-interactive]{pointer-events:auto}.tippy-tooltip[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.53,2,.36,.85)}.tippy-tooltip[data-inertia][data-state=hidden]{transition-timing-function:ease}.tippy-arrow,.tippy-roundarrow{position:absolute;width:0;height:0}.tippy-roundarrow{pointer-events:none}.tippy-roundarrow path{pointer-events:auto}.tippy-backdrop{position:absolute;will-change:transform;background-color:#333;border-radius:50%;width:26%;left:50%;top:50%;z-index:-1;transition:all cubic-bezier(.46,.1,.52,.98);-webkit-backface-visibility:hidden;backface-visibility:hidden}.tippy-backdrop:after{content:"";float:left;padding-top:100%}body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(100% 100% at 50% 50%);clip-path:ellipse(100% 100% at 50% 50%)}body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(5% 50% at 50% 50%);clip-path:ellipse(5% 50% at 50% 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 0 50%);clip-path:ellipse(135% 100% at 0 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(25% 100% at 0 50%);clip-path:ellipse(25% 100% at 0 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 100% 50%);clip-path:ellipse(135% 100% at 100% 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(25% 100% at 100% 50%);clip-path:ellipse(25% 100% at 100% 50%)}@media (max-width:360px){.tippy-popper{max-width:96%;max-width:calc(100% - 20px)}}
+  </style>
+  <meta content="text/html;charset=utf-8" name="Content-Type"/>
+  <meta content="unsafe-url" name="Referrer"/>
+  <meta content="True" name="HandheldFriendly"/>
+  <meta content="#ffffff" name="theme-color"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <meta content="yes" name="mobile-web-app-capable"/>
+  <meta content="d0264f228155c7a1f72c3d91c17ce8fb" name="detectify-verification"/>
+  <meta content="b87e3b55b409494aab88c1610b05a5f0" name="p:domain_verify"/>
+  <meta content="OFc8dmwZo7ttU4UCnDh1rKDtLlY" name="alexaVerifyID"/>
+  <meta content="D00WizvYyr" name="baidu-site-verification"/>
+  <meta content="D9B08FEA08E3DA402BF07ABAB61D77DE" name="msvalidate.01"/>
+  <meta content="f2f4cb229bda06a4" property="wb:webmaster"/>
+  <meta content="LM_cJR94XJIqcYJeOCscGVMWdaRUvmyz6cVOqkFplaU" name="google-site-verification"/>
+  <meta content="c8ffe9a587b126f152ed3d89a146b445" name="wwads-cn-verify"/>
+  <title>
+   Telegram 收发微信消息 [2023 最新版] - V2EX
+  </title>
+  <link href="https://static.v2ex.com/" rel="dns-prefetch"/>
+  <link href="https://cdn.v2ex.com/" rel="dns-prefetch"/>
+  <link href="https://i.v2ex.co/" rel="dns-prefetch"/>
+  <link href="https://www.google-analytics.com/" rel="dns-prefetch"/>
+  <style>
+   body {
+            min-width: 820px;
+            font-family: "Helvetica Neue", "Luxi Sans", "Segoe UI", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Logo";
+        }
+  </style>
+  <link href="https:/assets/11e37290f1407d24c1ba8224cd479bc4907e5fce-combo.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="https:/static/css/vendor/tomorrow.css?v=3c006808236080a5d98ba4e64b8f323f" rel="stylesheet" type="text/css"/>
+  <link href="https:/static/icon-192.png" rel="icon" sizes="192x192"/>
+  <link href="https:/static/apple-touch-icon-180.png?v=91e795b8b5d9e2cbf2d886c3d4b7d63c" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="https:/static/favicon.ico" rel="shortcut icon" type="image/png"/>
+  <link href="https:/manifest.webmanifest" rel="manifest"/>
+  <meta content="分享发现 - @simonle - # Telegram 收发微信消息 - Docker compose 一键部署 [ 2023 最新版] github 地址： https://github.com/zhangyile/tele" name="description"/>
+  <link href="https://www.v2ex.com/t/908436" rel="canonical"/>
+  <meta content="zh_CN" property="og:locale"/>
+  <meta content="article" property="og:type"/>
+  <meta content="Telegram 收发微信消息 [2023 最新版] - V2EX" property="og:title"/>
+  <meta content="分享发现 - @simonle - # Telegram 收发微信消息 - Docker compose 一键部署 [ 2023 最新版] github 地址： https://github.com/zhangyile/tele" property="og:description"/>
+  <meta content="https://www.v2ex.com/t/908436" property="og:url"/>
+  <meta content="V2EX" property="og:site_name"/>
+  <meta content="share" property="article:tag"/>
+  <meta content="分享发现" property="article:section"/>
+  <meta content="2023-01-12T07:25:33Z" property="article:published_time"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="分享发现 - @simonle - # Telegram 收发微信消息 - Docker compose 一键部署 [ 2023 最新版] github 地址： https://github.com/zhangyile/tele" name="twitter:description"/>
+  <meta content="Telegram 收发微信消息 [2023 最新版] - V2EX" name="twitter:title"/>
+  <meta content="https://cdn.v2ex.com/gravatar/6d9eb5e4c962a239440642c3df17caf2?s=73&amp;d=retro" name="twitter:image"/>
+  <meta content="@V2EX" name="twitter:site"/>
+  <meta content="@V2EX" name="twitter:creator"/>
+  <link href="https:#" rel="top" title="回到顶部"/>
+  <link href="https://www.v2ex.com/amp/t/908436" rel="amphtml"/>
+  <link crossorigin="" href="https://googleads.g.doubleclick.net" rel="preconnect"/>
+  <meta content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==" http-equiv="origin-trial"/>
+  <meta content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==" http-equiv="origin-trial"/>
+  <meta content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9" http-equiv="origin-trial"/>
+ </head>
+ <body>
+  <div id="Top">
+   <div class="content">
+    <div class="site-nav">
+     <a href="/" name="top" title="way to explore">
+      <div id="Logo">
+      </div>
+     </a>
+     <div id="search-container">
+      <input autocomplete="off" id="search" maxlength="128" tabindex="1" type="text"/>
+      <div class="box" id="search-result">
+      </div>
+     </div>
+     <div class="tools">
+      <a class="top" href="/">
+       首页
+      </a>
+      <a class="top" href="/signup">
+       注册
+      </a>
+      <a class="top" href="/signin">
+       登录
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="Wrapper">
+   <div class="content">
+    <div id="Leftbar">
+    </div>
+    <div id="Rightbar">
+     <div class="sep20">
+     </div>
+     <div class="box">
+      <div class="cell">
+       <strong>
+        V2EX = way to explore
+       </strong>
+       <div class="sep5">
+       </div>
+       <span class="fade">
+        V2EX 是一个关于分享和探索的地方
+       </span>
+      </div>
+      <div class="inner">
+       <div class="sep5">
+       </div>
+       <div align="center">
+        <a class="super normal button" href="/signup">
+         现在注册
+        </a>
+        <div class="sep5">
+        </div>
+        <div class="sep10">
+        </div>
+        已注册用户请
+        <a href="/signin">
+         登录
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="sep20">
+     </div>
+     <div class="box">
+      <div class="inner">
+       <div class="sidebar_units">
+       </div>
+       <strong class="green">
+        探索世界的好奇心万岁
+       </strong>
+      </div>
+      <div class="sidebar_compliance">
+       <a href="/advertise" target="_blank">
+        广告
+       </a>
+      </div>
+     </div>
+     <div class="sep20">
+     </div>
+     <div style="box-sizing: border-box">
+      <div class="wwads-cn wwads-vertical" data-id="98" style="max-width: 100%; padding-top: 20px; margin-top: 0px; text-align: left; box-shadow: 0 2px 3px rgb(0 0 0 / 10%); border-bottom: 1px solid var(--box-border-color); background-color: var(--box-background-color); color: var(--box-foreground-color);">
+      </div>
+     </div>
+     <style type="text/css">
+      .wwads-text { color: var(--link-color) !important; }
+     </style>
+     <div class="sep20">
+     </div>
+    </div>
+    <div id="Main">
+     <div class="sep20">
+     </div>
+     <div class="box" style="border-bottom: 0px;">
+      <div class="header">
+       <div class="fr">
+        <a href="/member/simonle">
+         <img align="default" alt="simonle" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/6d9eb5e4c962a239440642c3df17caf2?s=73&amp;d=retro"/>
+        </a>
+       </div>
+       <a href="/">
+        V2EX
+       </a>
+       <span class="chevron">
+        ›
+       </span>
+       <a href="/go/share">
+        分享发现
+       </a>
+       <div class="sep10">
+       </div>
+       <h1>
+        Telegram 收发微信消息 [2023 最新版]
+       </h1>
+       <div class="votes" id="topic_908436_votes">
+        <a class="vote" href="javascript:" onclick="upVoteTopic(908436);">
+         <li class="fa fa-chevron-up">
+         </li>
+        </a>
+        <a class="vote" href="javascript:" onclick="downVoteTopic(908436);">
+         <li class="fa fa-chevron-down">
+         </li>
+        </a>
+       </div>
+       <small class="gray">
+        <a href="/member/simonle">
+         simonle
+        </a>
+        ·
+        <span title="2023-01-12 15:25:33 +08:00">
+         299 天前
+        </span>
+        · 6948 次点击
+       </small>
+      </div>
+      <div class="outdated">
+       这是一个创建于 299 天前的主题，其中的信息可能已经有所发展或是发生改变。
+      </div>
+      <div class="cell">
+       <div class="topic_content">
+        <div class="markdown_body">
+         <h1>
+          Telegram 收发微信消息 - Docker compose 一键部署 [ 2023 最新版]
+         </h1>
+         <p>
+          github 地址：
+          <a href="https://github.com/zhangyile/telegram-wechat.git" rel="nofollow">
+           https://github.com/zhangyile/telegram-wechat.git
+          </a>
+         </p>
+         <p>
+          efb 项目的原理是这样的：
+          <br/>
+          Telegram bot &gt; EFB &gt; 微信网页版 &gt; 微信
+         </p>
+         <p>
+          使用 itchat-uos 替换了 itchat
+         </p>
+         <ul>
+          <li>
+           itchat-uos:
+           <a href="https://github.com/why2lyj/ItChat-UOS" rel="nofollow">
+            https://github.com/why2lyj/ItChat-UOS
+           </a>
+          </li>
+          <li>
+           itchat:
+           <a href="https://github.com/littlecodersh/ItChat" rel="nofollow">
+            https://github.com/littlecodersh/ItChat
+           </a>
+          </li>
+         </ul>
+         <h2>
+          0. 环境依赖
+         </h2>
+         <ul>
+          <li>
+           一个正常使用的 Telegram 账号
+          </li>
+          <li>
+           一个正常使用的微信号 （微信号需实名并绑有银行卡，否则无法登录 UOS 网页版微信）
+          </li>
+          <li>
+           docker / docker compose （本文以 docker compose 为例，怎么安装，自己网上找教程）
+          </li>
+          <li>
+           一台 Linux 服务器 （需与
+           <a href="http://api.telegram.org" rel="nofollow">
+            api.telegram.org
+           </a>
+           能通信）
+          </li>
+         </ul>
+         <h2>
+          1. Telegram 上创建机器人并获取 Token 和 ID
+         </h2>
+         <blockquote>
+          <p>
+           原文：
+           <a href="https://specialhua.top/20190618/cid=4.html" rel="nofollow">
+            https://specialhua.top/20190618/cid=4.html
+           </a>
+          </p>
+         </blockquote>
+         <h3>
+          1.1 获取 Bot Token
+         </h3>
+         <ol>
+          <li>
+           在 Telegram 里, 对 @botfather 说话: /newbot
+          </li>
+          <li>
+           按照要求给 Bot 取名
+          </li>
+          <li>
+           获取 Bot Token 安全原因: Token 必须保密（这串 token 要记好，待会要用）
+          </li>
+          <li>
+           允许 Bot 读取非指令信息，对 @botfather 说话: /setprivacy, 选择 disable
+          </li>
+          <li>
+           允许将 Bot 添加进群组，对 @botfather 说话: /setjoingroups, 选择 enable
+          </li>
+          <li>
+           允许 Bot 提供指令列表，对 @botfather 说话: /setcommands, 输入以下内容 （复制以下内容一次性发给 botfather ）
+          </li>
+         </ol>
+         <pre><code>help - 显示命令列表.
+link - 将远程会话绑定到 Telegram 群组
+chat - 生成会话头
+recog - 回复语音消息以进行识别
+info - 显示当前 Telegram 聊天的信息.
+unlink_all - 将所有远程会话从 Telegram 群组解绑.
+update_info - 更新群组名称和头像
+extra - 获取更多功能
+</code></pre>
+         <h3>
+          1.2 获取 Telegram 账户 ID
+         </h3>
+         <p>
+          再和另外一个机器人 @
+          <a href="/member/get_id_bot">
+           get_id_bot
+          </a>
+          对话（也是搜索得到这个机器人），点击 start 即可获得你的 Telegram ID ，一串数字（ Chat ID ）。
+         </p>
+         <p>
+          至此，Telegram 的配置完成，我们得到两个重要的数字：token 、Telegram ID （待会要用）
+         </p>
+         <h2>
+          2. 部署服务
+         </h2>
+         <pre><code># 拉取仓库代码
+git clone https://github.com/zhangyile/telegram-wechat.git
+
+# 修改 config.py 文件，填入 Token 和 ID
+cd telegram-wechat &amp;&amp; vi config.py
+
+# 启动服务
+docker compose up -d 
+
+# 查看日志中的微信二维码，扫码登录
+docker compose logs -f
+
+</code></pre>
+         <h2>
+          3. 开始使用
+         </h2>
+         <blockquote>
+          <p>
+           原文：
+           <a href="https://specialhua.top/20190618/cid=4.html" rel="nofollow">
+            https://specialhua.top/20190618/cid=4.html
+           </a>
+          </p>
+         </blockquote>
+         <p>
+          首先在 Telegram 中创建一个新的群组，比如 哈哈哈呵呵呵 这个名字，然后将你的机器人邀请进来（此处，手机端的 Telegram 无法直接拉机器人进来，你需要随便拉一个真人，再拉机器人进来，再把那个人踢出去；电脑端则可以在创建群组的时候直接拉机器人进来）
+         </p>
+         <p>
+          回到你的机器人对话中，如果你要将一个叫“哈哈哈呵呵呵”的微信好友单独作为 TG 中的聊天对话框，你就输入 /link 哈哈哈（不必输全名，机器人会检索含有此关键字的所有好友，然后选择 link ，选择你刚刚创建的 哈哈哈呵呵呵 这个群组，成功后，以后这个叫哈哈哈呵呵呵 的好友发来的信息不会在机器人那显示了，而是在这个群组）
+         </p>
+         <p>
+          我把常聊的几个人单独建了 TG 群，使消息分流，其余不常用的，使用机器人窗口接收，公众号及群消息也单独建群。
+         </p>
+         <h2>
+          4. 我都做了什么改动？
+         </h2>
+         <h3>
+          4.1 修改了
+          <code>
+           <a href="http://eh_wechat_slave.py" rel="nofollow">
+            eh_wechat_slave.py
+           </a>
+          </code>
+          文件
+         </h3>
+         <p>
+          因为 itchat-uos 源码里移除了 itchat 的 new_instance 方法。此处改为使用 itchat-uos 的 load_sync_itchat 方法。
+         </p>
+         <pre><code>......
+ 125         #self.itchat = itchat.new_instance()
+ 126         self.itchat = itchat.load_sync_itchat()
+ ......
+</code></pre>
+         <h3>
+          4.2 基础镜像安装了 ffmpeg-linux64-v3.3.1
+         </h3>
+         <p>
+          因为 royx/docker-efb 镜像里没有 ffmpeg ，每次启动，都要去下载。
+         </p>
+         <h2>
+          5. 参考链接
+         </h2>
+         <ul>
+          <li>
+           <a href="https://specialhua.top/20190618/cid=4.html" rel="nofollow">
+            https://specialhua.top/20190618/cid=4.html
+           </a>
+          </li>
+          <li>
+           <a href="https://www.iszy.cc/posts/ehforwarderbot/" rel="nofollow">
+            https://www.iszy.cc/posts/ehforwarderbot/
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="sep20">
+     </div>
+     <div class="box">
+      <div class="cell">
+       <div class="fr" style="margin: -3px -5px 0px 0px;">
+        <a class="tag" href="/tag/Telegram">
+         <li class="fa fa-tag">
+         </li>
+         Telegram
+        </a>
+        <a class="tag" href="/tag/token">
+         <li class="fa fa-tag">
+         </li>
+         token
+        </a>
+        <a class="tag" href="/tag/bot">
+         <li class="fa fa-tag">
+         </li>
+         bot
+        </a>
+        <a class="tag" href="/tag/机器人">
+         <li class="fa fa-tag">
+         </li>
+         机器人
+        </a>
+       </div>
+       <span class="gray">
+        44 条回复
+        <strong class="snow">
+         •
+        </strong>
+        2023-08-18 21:17:00 +08:00
+       </span>
+      </div>
+      <div class="cell" id="r_12570201">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="dolorain" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/c587/361c/596616_normal.png?m=1678269528"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             1
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/dolorain">
+             dolorain
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-01-12 15:41:32 +08:00">
+            299 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            思考了许久，只想到一个折腾它的理由，linux 上没微信客户端。
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12570236">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="Soutxx" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/8ea6/f4df/342332_normal.png?m=1690274448"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             2
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/Soutxx">
+             Soutxx
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-01-12 15:44:00 +08:00">
+            299 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/dolorain">
+             dolorain
+            </a>
+            #1 一语惊醒梦中人 /dog
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12570265">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="blufaux" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/540af5eccc747a348fb0337ef42a3623?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             3
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/blufaux">
+             blufaux
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-01-12 15:46:38 +08:00">
+            299 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/dolorain">
+             dolorain
+            </a>
+            哈哈
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12570315">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="simonle" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/6d9eb5e4c962a239440642c3df17caf2?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             4
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/simonle">
+             simonle
+            </a>
+           </strong>
+           <div class="badges">
+            <div class="badge op">
+             OP
+            </div>
+           </div>
+           <span class="ago" title="2023-01-12 15:52:46 +08:00">
+            299 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/dolorain">
+             dolorain
+            </a>
+            哈哈，人间清醒，我本意是想抛弃手机登录微信。折腾完了，发现还是要手机登录微信才能用。实用性并不高，留给有需的人吧。
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12570587">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="lengyuqu" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/a39c/a8ca/272376_normal.png?m=1673098513"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             5
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/lengyuqu">
+             lengyuqu
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-01-12 16:24:27 +08:00">
+            299 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            梯子都挂了，还差挂一个微信后台？ web 微信都用了，还在乎是 linux 还是 windows ？而且能访问 tg 的服务器都是海外服务器，这样做得不偿失，没准搞的微信封号
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12573148">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="channg" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/0f05/b831/291758_normal.png?m=1670487829"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             6
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/channg">
+             channg
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-01-13 09:56:01 +08:00">
+            298 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            买一个 ipad 协议或者手机协议啊，可以抛弃手机登录的，一个月百十来块就行了
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12573242">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="f5c4ebc2" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/9990/f187/609877_normal.png?m=1677761884"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             7
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/f5c4ebc2">
+             f5c4ebc2
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-01-13 10:04:48 +08:00">
+            298 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            目前使用了四个多月，我觉得这种方法的实用性在于：
+            <br/>
+            <br/>
+            1. 可以关掉手机微信后台
+            <br/>
+            2. 可以卸载电脑端微信
+            <br/>
+            3. 可以配置同时转发 QQ 消息，从而可以卸载手机 /电脑端 QQ （个人有一些必须在 QQ 上收发的消息）
+            <br/>
+            4. 许多账号已经不能登录微信网页版，但微信的 UOS 网页版不受此限制。这个方法本质上是和 UOS 网页版 API 通信
+            <br/>
+            5. Telegram Bot API 可以通过 Cloudflare 反代从而在国内访问
+            <br/>
+            6. 我用现有的海外服务器挂到现在还没有出现封号或风控的情况，相关交流群内也没有发现这类情况
+            <br/>
+            7. 可以实现一些微信没有的 feature ，比如定时发送、或是把几个群的消息合并到一个群里静音等等
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12573261">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="f5c4ebc2" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/9990/f187/609877_normal.png?m=1677761884"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             8
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/f5c4ebc2">
+             f5c4ebc2
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-01-13 10:06:36 +08:00">
+            298 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            而缺点主要在于不能卸载手机微信，因为诸如视频通话等特殊消息只能收到文字提示。但对于一个平时轻度使用微信、但又被微信捆绑的用户来说，绝大部分时间里都不用打开微信了。
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12573399">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="hoky" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/0702fd0efaafa81a942de2f345c178fa?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             9
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/hoky">
+             hoky
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-01-13 10:23:34 +08:00">
+            298 天前 via iPhone
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/f5c4ebc2">
+             f5c4ebc2
+            </a>
+            这个现在有没有封号危险？
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12573501">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="f5c4ebc2" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/9990/f187/609877_normal.png?m=1677761884"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             10
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/f5c4ebc2">
+             f5c4ebc2
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-01-13 10:36:42 +08:00">
+            298 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/hoky">
+             hoky
+            </a>
+            #9 我不能保证没有，只能说我自己用海外服务器挂了四个月没出现这种情况
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12573597">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="littlewing" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/8c06543a20e6ff5cc3ce8b295d5fc1ca?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             11
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/littlewing">
+             littlewing
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-01-13 10:52:46 +08:00">
+            298 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            怕被封号
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12573664">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="hoky" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/0702fd0efaafa81a942de2f345c178fa?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             12
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/hoky">
+             hoky
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-01-13 10:59:20 +08:00">
+            298 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            日志显示有一个错误。
+            <br/>
+            <br/>
+            telegram-wechat-telegram-wechat-1 | Traceback (most recent call last):
+            <br/>
+            telegram-wechat-telegram-wechat-1 | File "/usr/lib/python3.6/site-packages/
+            <a href="http://peewee.py" rel="nofollow noopener" target="_blank">
+             peewee.py
+            </a>
+            ", line 2516, in connect
+            <br/>
+            telegram-wechat-telegram-wechat-1 | self._state.set_connection(self._connect())
+            <br/>
+            telegram-wechat-telegram-wechat-1 | File "/usr/lib/python3.6/site-packages/
+            <a href="http://peewee.py" rel="nofollow noopener" target="_blank">
+             peewee.py
+            </a>
+            ", line 2782, in _connect
+            <br/>
+            telegram-wechat-telegram-wechat-1 | **self.connect_params)
+            <br/>
+            telegram-wechat-telegram-wechat-1 | sqlite3.OperationalError: unable to open database file
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12574168">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="simonle" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/6d9eb5e4c962a239440642c3df17caf2?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             13
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/simonle">
+             simonle
+            </a>
+           </strong>
+           <div class="badges">
+            <div class="badge op">
+             OP
+            </div>
+           </div>
+           <span class="ago" title="2023-01-13 12:00:53 +08:00">
+            298 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/hoky">
+             hoky
+            </a>
+            在拉下来的代码目录下 执行一下 `touch tgdata.db` 创建一下这个空文件就好了。
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12574243">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="simonle" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/6d9eb5e4c962a239440642c3df17caf2?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             14
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/simonle">
+             simonle
+            </a>
+           </strong>
+           <div class="badges">
+            <div class="badge op">
+             OP
+            </div>
+           </div>
+           <span class="ago" title="2023-01-13 12:15:19 +08:00">
+            298 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/f5c4ebc2">
+             f5c4ebc2
+            </a>
+            我琢磨了一下，使用安卓模拟器来登录手机微信，这样就可以不用手机登录微信了，mac 上使用 android studio 已经走通流程了，但是现在在 Centos 服务器上面安装的 android studio 还有点问题，使用不起来。
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12574292">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="hoky" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/0702fd0efaafa81a942de2f345c178fa?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             15
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/hoky">
+             hoky
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-01-13 12:27:55 +08:00">
+            298 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/simonle">
+             simonle
+            </a>
+            还是这个错误。
+            <br/>
+            Docker 的映射是这样的。
+            <br/>
+            /root/telegram-wechat/tgdata.db /opt/ehForwarderBot/plugins/eh_telegram_master/tgdata.db
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12574380">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="hoky" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/0702fd0efaafa81a942de2f345c178fa?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             16
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/hoky">
+             hoky
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-01-13 12:51:12 +08:00">
+            298 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            Docker 删了重新来一遍，可以了。谢谢。
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12577835">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="aQuQ" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/1311/f7be/589027_normal.png?m=1692693066"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             17
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/aQuQ">
+             aQuQ
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-01-14 12:20:46 +08:00">
+            297 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            lz 有没有考虑把 qq 也集成进来，先把 tx 二件套干掉
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12580522">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="simonle" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/6d9eb5e4c962a239440642c3df17caf2?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             18
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/simonle">
+             simonle
+            </a>
+           </strong>
+           <div class="badges">
+            <div class="badge op">
+             OP
+            </div>
+           </div>
+           <span class="ago" title="2023-01-15 15:39:01 +08:00">
+            296 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/aQuQ">
+             aQuQ
+            </a>
+            可以用这个
+            <a href="https://github.com/xzsk2/TG-EFB-QQ-Docker" rel="nofollow noopener" target="_blank">
+             https://github.com/xzsk2/TG-EFB-QQ-Docker
+            </a>
+            ，再部署一个 qq 的就好了，简单粗暴，集成进来的话，不知道可不可行，有现成的了，就没有折腾的必要。
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12590078">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="imldy" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/7dd7/e339/529953_normal.png?m=1695655354"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             19
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/imldy">
+             imldy
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-01-18 02:42:18 +08:00">
+            293 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            已用，测试起来速度不错
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12593162">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="imldy" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/7dd7/e339/529953_normal.png?m=1695655354"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             20
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/imldy">
+             imldy
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-01-18 18:49:50 +08:00">
+            293 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            update_info 没反应，已提 issue
+            <a href="https://github.com/zhangyile/telegram-wechat/issues/2" rel="nofollow noopener" target="_blank">
+             https://github.com/zhangyile/telegram-wechat/issues/2
+            </a>
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12674687">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="Jusekenny" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/2e45/b886/312404_normal.png?m=1655795009"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             21
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/Jusekenny">
+             Jusekenny
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-02-10 11:49:28 +08:00">
+            270 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            已经在用了，还不错，感谢 OP 。现在 qq 和微信都可以通过 tg 转发了，虽然微信暂时还不能卸载，但是 qq 的 APP 已经彻底不用了。
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12682972">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="miaomiaomaomao" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/d90e/0842/577430_normal.png?m=1678172451"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             22
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/miaomiaomaomao">
+             miaomiaomaomao
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-02-12 23:19:34 +08:00">
+            268 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/Jusekenny">
+             Jusekenny
+            </a>
+            老哥，问下用 tg 转发 qq 消息怎么做？
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12687142">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="EXerllon" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/98b1deaf65db1e5b7d5262e874374b3c?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             23
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/EXerllon">
+             EXerllon
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-02-13 17:03:22 +08:00">
+            267 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            用了一天，被封号了.....
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12708027">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="LeeP3" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/c0fd62317c47f5f12b86a0bb26cc473f?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             24
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/LeeP3">
+             LeeP3
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-02-17 18:09:15 +08:00">
+            263 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            效果蛮好的
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12708230">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="LeeP3" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/c0fd62317c47f5f12b86a0bb26cc473f?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             25
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/LeeP3">
+             LeeP3
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-02-17 19:22:57 +08:00">
+            263 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/LeeP3">
+             LeeP3
+            </a>
+            被警告了。。。服了
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12712977">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="babaev" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/c0475391445e0224f22307bc636db4c1?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             26
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/babaev">
+             babaev
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-02-19 20:55:20 +08:00">
+            261 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/EXerllon">
+             EXerllon
+            </a>
+            不是吧，一天就被封号了
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12712979">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="babaev" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/c0475391445e0224f22307bc636db4c1?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             27
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/babaev">
+             babaev
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-02-19 20:55:42 +08:00">
+            261 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/EXerllon">
+             EXerllon
+            </a>
+            不是吧，一天就被封号了
+            <br/>
+            @
+            <a href="/member/LeeP3">
+             LeeP3
+            </a>
+            那看来还有风险
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12764035">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="zhishixiang" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/d8aa/46ed/470356_normal.png?m=1688090736"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             28
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/zhishixiang">
+             zhishixiang
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-03-02 14:52:25 +08:00">
+            250 天前 via Android
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            正打算自己用可爱猫写一个，看来已经有了，白嫖了（ bu
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12775569">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="wwxwlw" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/b9af/b27c/582442_normal.png?m=1680662975"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             29
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/wwxwlw">
+             wwxwlw
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-03-05 10:30:10 +08:00">
+            247 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            感谢 OP 的教程, 有个问题就是 /update_info 命令不管用
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12803102">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="aQuQ" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/1311/f7be/589027_normal.png?m=1692693066"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             30
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/aQuQ">
+             aQuQ
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-03-11 16:05:44 +08:00">
+            241 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            使用了三个月，wx 号被封了一次，解封后继续上（感觉有点作死，哈哈）
+            <br/>
+            <br/>
+            不过 wx 确实是一个很封闭的平台，最好还是采用 win 端+dll 注入的方式，这种被封的概率很低，目前也有轮子可用。
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12822445">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="EXerllon" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/98b1deaf65db1e5b7d5262e874374b3c?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             31
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/EXerllon">
+             EXerllon
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-03-16 09:56:30 +08:00">
+            236 天前 via Android
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/aQuQ">
+             aQuQ
+            </a>
+            现在还在用吗，有没有再次被封，个人挺需要这个项目的
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_12892445">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="aQuQ" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/1311/f7be/589027_normal.png?m=1692693066"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             32
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/aQuQ">
+             aQuQ
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-04-01 15:39:52 +08:00">
+            220 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/EXerllon">
+             EXerllon
+            </a>
+            昨天又被封了一次，暂时不打算用了。现在是警告式封号，多封几次可能就永封了。
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_13024459">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="465456" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/83a768422f45393b6be21b702a0a1515?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             33
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/465456">
+             465456
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-05-03 10:28:46 +08:00">
+            188 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            谢了，已食用，禁止了微信，马上多了 2G 可运行内存
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_13250007">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="zhishixiang" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/d8aa/46ed/470356_normal.png?m=1688090736"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             34
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/zhishixiang">
+             zhishixiang
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-06-21 13:33:09 +08:00">
+            139 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            用了一段时间，目前非常稳定，只封了一次，没有 3a 大作续航好了不少
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_13300662">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="ltkun" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/ce158dc5cd70d96913d8f9ab1e92d73d?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             35
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/ltkun">
+             ltkun
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-07-03 14:23:01 +08:00">
+            127 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            感谢！用了几天很舒服！暂时没有被封
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_13325003">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="ltkun" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/ce158dc5cd70d96913d8f9ab1e92d73d?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             36
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/ltkun">
+             ltkun
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-07-07 21:47:09 +08:00">
+            123 天前 via Android
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            今天下午突然不能用了 登录可以用 tg 发消息但是不能收微信的消息
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_13325051">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="ltkun" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/ce158dc5cd70d96913d8f9ab1e92d73d?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             37
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/ltkun">
+             ltkun
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-07-07 22:04:16 +08:00">
+            123 天前 via Android
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            前面恢复了 不知道为啥中断 扫码登录了好几次
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_13413112">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="mianlaodie" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/278178220833cdbaac2c614fe6a9b153?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             38
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/mianlaodie">
+             mianlaodie
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-07-27 18:15:39 +08:00">
+            103 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            被封号是因为长期登录网页本在海外还是其他什么原因哇
+            <br/>
+            猜想假如在家里的 nas 上运行，然后路由器开规则爬墙，会不会就会好很多，这样甚至从 ip 上来看，app 端的微信和网页端的还是同一局域网
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_13442388">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="ltkun" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/ce158dc5cd70d96913d8f9ab1e92d73d?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             39
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/ltkun">
+             ltkun
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-08-03 07:41:01 +08:00">
+            96 天前 via Android
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/mianlaodie">
+             mianlaodie
+            </a>
+            木有封号 不过昨晚开始不正常 重新登录可以 但是也收不到信息 日志显示错误就没有然后了
+            <br/>
+            Slave channel WeChat Slave (eh_wechat_slave) initialized. telegram-wechat_1 | 02-08-2023:23:31:56,950 CRITICAL [
+            <a href="http://main.py:87" rel="nofollow noopener" target="_blank">
+             main.py:87
+            </a>
+            ] telegram-wechat_1 | Initializing master ('plugins.eh_telegram_master', 'TelegramChannel')...
+            <br/>
+            telegram-wechat_1 | 02-08-2023:23:32:00,484 CRITICAL [
+            <a href="http://main.py:90" rel="nofollow noopener" target="_blank">
+             main.py:90
+            </a>
+            ]
+            <br/>
+            telegram-wechat_1 | Master channel Telegram Master (eh_telegram_master) initialized.
+            <br/>
+            telegram-wechat_1 | 02-08-2023:23:32:00,484 CRITICAL [
+            <a href="http://main.py:92" rel="nofollow noopener" target="_blank">
+             main.py:92
+            </a>
+            ]
+            <br/>
+            telegram-wechat_1 | All channels initialized.
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_13443058">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="mianlaodie" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/278178220833cdbaac2c614fe6a9b153?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             40
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/mianlaodie">
+             mianlaodie
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-08-03 10:06:15 +08:00">
+            96 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/ltkun">
+             ltkun
+            </a>
+            我的挂在家里的 还正常，甚至挂了两个微信上去
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_13453572">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="ltkun" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/ce158dc5cd70d96913d8f9ab1e92d73d?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             41
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/ltkun">
+             ltkun
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-08-05 07:08:45 +08:00">
+            94 天前 via Android
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            现在就是通过电报可以收消息 但是发不行 退出再登录也是一样
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_13453767">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="ltkun" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/ce158dc5cd70d96913d8f9ab1e92d73d?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             42
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/ltkun">
+             ltkun
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-08-05 09:26:45 +08:00">
+            94 天前 via Android
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            @
+            <a href="/member/mianlaodie">
+             mianlaodie
+            </a>
+            换了个小号一切正常 看来大号被风控了
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_13519686">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="lev1s" border="0" class="avatar" src="https://cdn.v2ex.com/avatar/de78/4a99/625196_normal.png?m=1682059217"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             43
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/lev1s">
+             lev1s
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-08-18 19:26:24 +08:00">
+            81 天前
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            wechat 账号没法登陆 uos 的 web ，得用微信
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="cell" id="r_13519959">
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+         <tr>
+          <td align="center" valign="top" width="48">
+           <img align="default" alt="ltkun" border="0" class="avatar" src="https://cdn.v2ex.com/gravatar/ce158dc5cd70d96913d8f9ab1e92d73d?s=48&amp;d=retro"/>
+          </td>
+          <td valign="top" width="10">
+          </td>
+          <td align="left" valign="top" width="auto">
+           <div class="fr">
+            <span class="no">
+             44
+            </span>
+           </div>
+           <div class="sep3">
+           </div>
+           <strong>
+            <a class="dark" href="/member/ltkun">
+             ltkun
+            </a>
+           </strong>
+           <div class="badges">
+           </div>
+           <span class="ago" title="2023-08-18 21:17:00 +08:00">
+            81 天前 via Android
+           </span>
+           <div class="sep5">
+           </div>
+           <div class="reply_content">
+            也不是风控 应该是网页版微信每天有个发送接收到最大值 超过了就限制了 已经遇到两次了 换小号一切正常
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+     <div class="sep20">
+     </div>
+     <div class="sep20">
+     </div>
+     <div style="box-sizing: border-box">
+      <div class="wwads-cn wwads-horizontal" data-id="98" style="max-width: 100%; padding-top: 10px; margin-top: 0px; text-align: left; box-shadow: 0 2px 3px rgb(0 0 0 / 10%); border-bottom: 1px solid var(--box-border-color); background-color: var(--box-background-color); color: var(--box-foreground-color);">
+      </div>
+     </div>
+     <style type="text/css">
+      .wwads-cn { border-radius: 3px !important; } .wwads-text { color: var(--link-color) !important; }
+     </style>
+    </div>
+   </div>
+   <div class="c">
+   </div>
+   <div class="sep20">
+   </div>
+  </div>
+  <div id="Bottom">
+   <div class="content">
+    <div class="inner">
+     <div class="sep10">
+     </div>
+     <div class="fr">
+      <a href="https://www.digitalocean.com/?refcode=1b51f1a7651d" target="_blank">
+       <div id="DigitalOcean">
+       </div>
+      </a>
+     </div>
+     <strong>
+      <a class="dark" href="/about" target="_self">
+       关于
+      </a>
+      <span class="snow">
+       ·
+      </span>
+      <a class="dark" href="/help" target="_self">
+       帮助文档
+      </a>
+      <span class="snow">
+       ·
+      </span>
+      <a class="dark" href="https://blog.v2ex.com/" target="_blank">
+       博客
+      </a>
+      <span class="snow">
+       ·
+      </span>
+      <a class="dark" href="/help/api" target="_self">
+       API
+      </a>
+      <span class="snow">
+       ·
+      </span>
+      <a class="dark" href="/faq" target="_self">
+       FAQ
+      </a>
+      <span class="snow">
+       ·
+      </span>
+      <a class="dark" href="/mission" target="_self">
+       我们的愿景
+      </a>
+      <span class="snow">
+       ·
+      </span>
+      <a class="dark" href="/tools" target="_self">
+       实用小工具
+      </a>
+      <span class="snow">
+       ·
+      </span>
+      1512 人在线
+     </strong>
+     <span class="fade">
+      最高记录 6543
+     </span>
+     <span class="snow">
+      ·
+     </span>
+     <a class="f11" href="/select/language">
+      <img align="absmiddle" id="ico-select-language" src="/static/img/language.png?v=6a5cfa731dc71a3769f6daace6784739" width="16"/>
+      Select Language
+     </a>
+     <div class="sep20">
+     </div>
+     创意工作者们的社区
+     <div class="sep5">
+     </div>
+     World is powered by solitude
+     <div class="sep20">
+     </div>
+     <span class="small fade">
+      VERSION: 3.9.8.5 · 31ms ·
+      <a href="/worldclock#utc">
+       UTC 17:19
+      </a>
+      ·
+      <a href="/worldclock#pvg">
+       PVG 01:19
+      </a>
+      ·
+      <a href="/worldclock#lax">
+       LAX 09:19
+      </a>
+      ·
+      <a href="/worldclock#jfk">
+       JFK 12:19
+      </a>
+      <br/>
+      Developed with
+      <a href="https://cl.v2ex.pro/" target="_blank">
+       CodeLauncher
+      </a>
+      <br/>
+      ♥ Do have faith in what you're doing.
+     </span>
+     <div class="sep10">
+     </div>
+    </div>
+   </div>
+  </div>
+  <ins class="adsbygoogle adsbygoogle-noablate" data-ad-status="unfilled" data-adsbygoogle-status="done" style="display: none !important;">
+   <div aria-label="Advertisement" id="aswift_0_host" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;" tabindex="0" title="Advertisement">
+    <iframe allowtransparency="true" data-google-container-id="a!1" data-load-complete="true" frameborder="0" hspace="0" id="aswift_0" marginheight="0" marginwidth="0" name="aswift_0" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5060390720525238&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1699377554&amp;plat=1%3A8%2C2%3A8%2C3%3A2162688%2C4%3A2162688%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fwww.v2ex.com%2Ft%2F908436&amp;ea=0&amp;pra=5&amp;wgl=1&amp;easpi=0&amp;asro=0&amp;asiscm=1&amp;aslmt=0.4&amp;asamt=-1&amp;asedf=0&amp;asefa=1&amp;aseiel=1~2&amp;ascmds=1&amp;uach=WyJMaW51eCIsIjYuMS4wIiwieDg2IiwiIiwiMTE4LjAuNTk5My4xMTciLG51bGwsMCxudWxsLCI2NCIsW1siQ2hyb21pdW0iLCIxMTguMC41OTkzLjExNyJdLFsiSGVhZGxlc3NDaHJvbWUiLCIxMTguMC41OTkzLjExNyJdLFsiTm90PUE_QnJhbmQiLCI5OS4wLjAuMCJdXSwwXQ..&amp;dt=1699377553893&amp;bpp=2&amp;bdt=845&amp;idt=811&amp;shv=r20231102&amp;mjsv=m202311020101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=2667269721912&amp;frm=20&amp;pv=2&amp;ga_vid=216348979.1699377554&amp;ga_sid=1699377555&amp;ga_hid=895087096&amp;ga_fc=1&amp;u_tz=480&amp;u_his=2&amp;u_h=600&amp;u_w=800&amp;u_ah=600&amp;u_aw=800&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=785&amp;bih=585&amp;scr_x=0&amp;scr_y=0&amp;eid=44759876%2C44759927%2C31079402%2C42532601%2C44795922%2C44807455%2C44807461%2C44808111%2C31078297%2C44807405%2C44808149&amp;oid=2&amp;pvsid=3920123657388912&amp;tmod=711516060&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C800%2C0%2C800%2C600%2C800%2C600&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=33792&amp;bc=31&amp;psd=W251bGwsbnVsbCxudWxsLDNd&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=846" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" vspace="0">
+    </iframe>
+   </div>
+  </ins>
+  <iframe height="0" src="https://www.google.com/recaptcha/api2/aframe" style="display: none;" width="0">
+  </iframe>
+ </body>
+</html>
